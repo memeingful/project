@@ -1,0 +1,29 @@
+{
+  "name": "meme-ingful",
+  "version": "1.0.0",
+  "description": "A site dedicated to creating pleasant word-targeted images...with a twist",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/memeingful/project.git"
+  },
+  "keywords": [
+    "Node",
+    "API",
+    "Javascript"
+  ],
+  "author": "David Johnson,Philip Kim, Autumn Curtis, Jackie Ly, Eric Singleton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/memeingful/project/issues"
+  },
+  "homepage": "https://github.com/memeingful/project#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3"
+  }
+}
