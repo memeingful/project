@@ -1,1 +1,29 @@
 @import '/vendors/normalize.css';
+
+body {
+  width: 480px;
+  margin: auto;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  text-decoration-line: underline;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header {
+  height: 10%;
+  background-color: rgb(51, 51, 51);
+}
+
+footer {
+  height: 10%;
+  background-color: rgb(51, 51, 51);
+}

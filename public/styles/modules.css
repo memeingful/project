@@ -1,0 +1,9 @@
+#nav-place a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav-place li{
+  list-style-type: none;
+  margin-right: 10%;
+}
