@@ -17,4 +17,5 @@ client.on('error', err => console.error(err));
 app.use(express.urlencoded({extended:true}));
 //add API and JSON line of code from lecture here
 
+app.get('*', (req, res) => res.redirect(CLIENT_URL));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
