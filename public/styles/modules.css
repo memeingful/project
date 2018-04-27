@@ -1,9 +1,40 @@
+#head h1 {
+  padding-top: 2%;
+}
+
+#head img {
+  margin: 2%;
+  height: 75%;
+  width: auto;
+}
+
 #nav-place a {
   text-decoration: none;
   color: white;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 #nav-place li{
   list-style-type: none;
-  margin-right: 10%;
+}
+
+.default {
+  background-color: rgb(63, 63, 63);
+  color: grey;
+}
+
+.category {
+  color: black;
+}
+
+#search {
+  width: 30%;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.bio a {
+  margin: 25px 10% 10% 15px;
 }

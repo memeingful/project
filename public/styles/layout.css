@@ -1,12 +1,14 @@
 @import 'base.css';
 @import 'modules.css';
 
+
 #nav-bar {
   display: inline-flex;
 }
 
 .container {
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .error-view {
@@ -15,3 +17,38 @@
   display: none;
 }
 
+.search-view {
+  display: none;
+}
+
+#meme-finder {
+  /* border: solid black 1px; */
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 15px;
+  /* text-align: center; */
+}
+
+select {
+  margin: 5%;
+  width: 85%;
+  padding: 10px;
+  color: grey;
+  border-radius: 10px;
+  /* border: black solid 1px; */
+}
+
+.result-view {
+  display: none;
+}
+
+.bio {
+  margin: 10px;
+  padding: 10px;
+}
