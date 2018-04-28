@@ -35,6 +35,27 @@
   border-radius: 5px;
 }
 
-.bio a {
-  margin: 25px 10% 10% 15px;
+.bio {
+  width: 100%;
+}
+
+.links {
+  width: 80%;
+  display: inline-block;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links li {
+  float: left;
+  margin-left: 18%;
+  padding: 2%;
+}
+
+.bio p {
+  width: 80%;
+  margin: auto;
 }
