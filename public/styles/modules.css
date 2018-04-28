@@ -7,3 +7,27 @@
   list-style-type: none;
   margin-right: 10%;
 }
+
+#head img {
+  padding: 2%;
+  width: 80%;
+}
+
+#choose {
+  /* flex: 90%; */
+  /* max-width: 95%; */
+  width: 100%;
+}
+
+.choice {
+  /* padding: 2%;
+  width: 100%; */
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+}
+
+.choice img {
+  width: 90%;
+  max-height: 300px;
+}
