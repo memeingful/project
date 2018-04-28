@@ -13,7 +13,6 @@
 .error-view {
   color: rgb(219, 46, 46);
   text-decoration-line: underline;
-  display: none;
 }
 
 #meme-finder {
@@ -36,17 +35,6 @@ select {
   color: grey;
   border-radius: 10px;
   outline: 0;
-}
-.search-view {
-  display: none;
-}
-
-.result-view {
-  /* display: none; */
-}
-
-.about-view {
-  display: none;
 }
 
 .bio {
