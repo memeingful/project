@@ -5,7 +5,7 @@ var app = app || {};
 const ENV = {};
 
 ENV.isProduction = window.location.protocol === 'https:';
-ENV.productionUrl = 'https://memeingful.herokuapp.com/';
+ENV.productionUrl = 'https://memeingful.herokuapp.com';
 ENV.developmentUrl = 'http://localhost:3000';
 ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
