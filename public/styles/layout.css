@@ -25,6 +25,7 @@ input {
   width: 80%;
   padding: 10px;
   border-radius: 15px;
+  outline: 0;
 }
 
 select {
@@ -33,4 +34,5 @@ select {
   padding: 10px;
   color: grey;
   border-radius: 10px;
+  outline: 0;
 }

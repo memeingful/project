@@ -18,6 +18,11 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  margin: 0px auto;
+  padding-left: 2em; 
+}
+
 header {
   height: 10%;
   background-color: rgb(51, 51, 51);
@@ -30,6 +35,6 @@ a {
 }
 
 footer {
-  height: 10%;
+  height: 30%;
   background-color: rgb(51, 51, 51);
 }
