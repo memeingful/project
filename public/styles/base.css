@@ -51,4 +51,8 @@ footer {
   header {
     height: 5%;
   }
+
+  h3{
+    padding-left: 0;
+  }
 }
