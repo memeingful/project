@@ -1,7 +1,11 @@
 @import '/vendors/normalize.css';
 
 body {
+<<<<<<< HEAD
   width: 960px;
+=======
+  width: 100%;
+>>>>>>> 3017cd4170df22f53621eaa30ea7eaf33cbb0049
   margin: auto;
   background-color: grey;
   color: white;
@@ -23,6 +27,7 @@ h3 {
 }
 
 header {
+  /* width: 100%; */
   height: 10%;
   background-color: rgb(51, 51, 51);
   margin-top: 0;
