@@ -13,14 +13,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(express.static('public/index.html'));
+app.use(express.static('public'));
 
 const options = {
 
   url: process.env.API_URL + '?q=' + term,
 
   headers: {
-    'Ocp-Apim-Subscription-key': process.env.subscriptionKey
+    'Ocp-Apim-Subscription-key': process.env.API_KEYONE
   }
 };
 
@@ -45,5 +45,8 @@ app.get('/submit',(req,res) => {
 
 // app.get('*', (req, res) => res.redirect(CLIENT_URL));
 //app.get('*', (req, res) => res.sendFile({root: '/index.html'}));
+// app.get('/', (req,res) =>{
+//   // res.sendFile('index.html', {root: './public'});
+// })
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
 //test
