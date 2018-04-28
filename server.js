@@ -1,23 +1,49 @@
 'use strict';
-require('dotenv').config();
 // Application dependencies
+require('dotenv').config();
 const express = require('express');
-// const request = require('request');
+const request = require('request');
+const cors = require('cors');
+const PORT = process.env.PORT;
+
+let term = 'puppies';
 
 // Application Setup
 const app = express();
-const PORT = process.env.PORT;
-// const CLIENT_URL = process.env.CLIENT_URL;
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+app.use(express.static('public/index.html'));
 
-// Database Setup
-// const client = new pg.Client(process.env.DATABASE_URL);
-// client.connect();
-// client.on('error', err => console.error(err));
+const options = {
 
-// app.use(express.urlencoded({extended:true}));
+  url: process.env.API_URL + '?q=' + term,
+
+  headers: {
+    'Ocp-Apim-Subscription-key': process.env.subscriptionKey
+  }
+};
+
+app.get('/submit',(req,res) => {
+  request(options, function(error,response,body){
+    let searchResponse = JSON.parse(body);
+    // for(let i = 0; i < searchResponse.value.length; ++i){
+    //   let image = searchResponse.value[i];
+    //   //   // console.log('name', webPage.name);
+    //   //   // console.log('url', webPage.url);
+    //   //   // console.log('displayUrl', webPage.displayUrl);
+    //   //   // console.log('snippet: ' + webPage.snippet);
+    //   //   // console.log('dateLastCrawled: ' + webPage.dateLastCrawled);
+    //   //   console.log();
+    // }
+    res.send(searchResponse);
+  });
+});
+
+
 //add API and JSON line of code from lecture here
 
 // app.get('*', (req, res) => res.redirect(CLIENT_URL));
-app.get('/', (req, res) => res.send('hi'));
+//app.get('*', (req, res) => res.sendFile({root: '/index.html'}));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
 //test
