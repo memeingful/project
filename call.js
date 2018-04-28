@@ -16,7 +16,13 @@ ENV.apiUrl = ENV.developmentApiUrl;
 
   Container.search = callback =>
     $.get(`${ENV.apiUrl}/submit`)
-      .then(results => console.log(results.value));
+      .then(results => {
+        console.log(results.value);
+        var imageList = results.value;
+        for(let i=0; i <imageList.length; i++){
+          $('#imageBox').append(`<img src=${results.value[i].contentUrl}>`);
+        }
+      });
 
   module.Container = Container;
 

@@ -20,7 +20,7 @@ const options = {
   url: process.env.API_URL + '?q=' + term,
 
   headers: {
-    'Ocp-Apim-Subscription-key': process.env.subscriptionKey
+    'Ocp-Apim-Subscription-key': process.env.API_KEYONE
   }
 };
 
