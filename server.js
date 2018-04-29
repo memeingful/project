@@ -6,7 +6,7 @@ const request = require('request');
 const cors = require('cors');
 const PORT = process.env.PORT;
 
-let term = 'puppies';
+// let term = 'puppies';
 
 // Application Setup
 const app = express();
@@ -15,17 +15,22 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 
-const options = {
+// const options = {
 
-  url: process.env.API_URL + '?q=' + term,
+//   url: [process.env.API_URL + '?q=' + term],
 
-  headers: {
-    'Ocp-Apim-Subscription-key': process.env.API_KEYONE
-  }
-};
+//   headers: {
+//     'Ocp-Apim-Subscription-key': process.env.API_KEYONE
+//   }
+// };
 
 app.get('/submit',(req,res) => {
-  request(options, function(error,response,body){
+  request({
+    url: [process.env.API_URL + '?q=' + req.params.userInput],
+    headers: {
+      'Ocp-Apim-Subscription-key': process.env.API_KEYONE
+    }
+  }, function(error,response,body){
     let searchResponse = JSON.parse(body);
     // for(let i = 0; i < searchResponse.value.length; ++i){
     //   let image = searchResponse.value[i];
@@ -36,6 +41,7 @@ app.get('/submit',(req,res) => {
     //   //   // console.log('dateLastCrawled: ' + webPage.dateLastCrawled);
     //   //   console.log();
     // }
+    console.log('searching');
     res.send(searchResponse);
   });
 });
