@@ -11,18 +11,14 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
 (function(module){
 
-  const Container = {};
+  const Image = {};
 
-  Container.initHome = function() {
-    $('.container').hide();
-    $('.search-view').show();
-};
+  Image.search = (userInput) => {
+    return $.getJSON(`${ENV.url}/'?q='${userInput}`)
+      .then(results => console.log(results.value))
+      .catch(err => console.error(err));
+  };
 
-  Container.search = callback =>
-    $.get(`${ENV.url}/submit`)
-      .then(results => console.log(results.value));
-
-  module.Container = Container;
+  module.Image = Image;
 
 })(app);
-
