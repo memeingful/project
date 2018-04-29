@@ -22,6 +22,39 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
     $.get(`${ENV.url}/submit`)
       .then(results => console.log(results.value));
 
+
+  const memesters = [{
+    name: 'Eric Singleton Jr.',
+    github: '',
+    linkedIn: '',
+    email= '',
+  }, 
+  {
+    name: 'Autumn Curtis',
+    github: '',
+    linkedIn: '',
+    email= '',
+  },
+  {
+    name: 'Jackie',
+    github: '',
+    linkedIn: '',
+    email= '',
+  },
+  {
+    name: 'David Johnson',
+    github: '',
+    linkedIn: '',
+    email= '',
+  },
+  {
+    name: 'Phillip Kim',
+    github: '',
+    linkedIn: '',
+    email= '',
+  }
+]
+
   module.Container = Container;
 
 })(app);

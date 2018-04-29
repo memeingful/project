@@ -6,6 +6,50 @@
   <title>Meme-ingful</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
+
+  <!-- templates -->
+  <script id="error-template" type="text/x-handlebars-template">
+    <div id="error-message">
+      <h2>Error!</h2>
+      <p>Sorry, but we encountered a {{}} error.  Please try again.</p>
+    </div>
+  </script>
+
+  <script id="error-template" type="text/x-handlebars-template">
+    <div id="poulate-dropdown">
+      <select name="dropdown">
+        <option class="default" value="" disabled selected>Please select a Category</option>
+        <option class="category" value="{{}}">{{}}</option>
+      </select>
+    </div>
+  </script>
+
+  <script id="choice-template" type="text/x-handlebars-template">
+    <h2>Select your favorite image</h2>
+    <div id="choose">
+      <div class="choice">
+        <img class="bing-image" src="{{}}">
+      </div>
+      <div class="choice">
+        <img class="bing-image" src="{{}}">
+      </div>
+      <div class="choice">
+        <img class="bing-image" src="{{}}">
+      </div>
+    </div>
+  </script>
+
+  <script id="bio-template" type="text/x-handlebars-template">
+    <div class="bio">
+      <h3>{{name}}</h3>
+      <ul class="links">
+        <li><a href="{{github}}">Github</a></li>
+        <li><a href="{{linkedIn}}">Linkedin</a></li>
+        <li><a href="{{email}}">{{email}}</a></li>
+      </ul>
+      <p>{{}}}</p>
+    </div>
+  </script>
 </head>
 
 <body>
