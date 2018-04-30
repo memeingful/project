@@ -7,6 +7,7 @@ page('/*', (ctx, next) => {
 });
 
 
-page('/', app.searchView.initHome);
+page('/', app.searchView.view);
 page('/about', app.aboutContainer.view);
+page('/results', app.resultsContainer.view);
 page.start();

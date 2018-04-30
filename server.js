@@ -15,39 +15,16 @@ app.use(express.static('public'));
 
 app.get('/submit/:term',(req,res) => {
   let options = {
-    url: [process.env.API_URL + '?q=' + req.params.term],
+    url: process.env.API_URL + '?q=' + req.params.term,
     headers: {
       'Ocp-Apim-Subscription-key': process.env.API_KEYONE
     }
   };
-  console.log(options);
-  console.log(req.params.term + '!!!');
 
   request(options, function(error,response,body){
-    console.log(error);
-    console.log(body);
-    console.log(response);
     let searchResponse = JSON.parse(body);
-    // for(let i = 0; i < searchResponse.value.length; ++i){
-    //   let image = searchResponse.value[i];
-    //   //   // console.log('name', webPage.name);
-    //   //   // console.log('url', webPage.url);
-    //   //   // console.log('displayUrl', webPage.displayUrl);
-    //   //   // console.log('snippet: ' + webPage.snippet);
-    //   //   // console.log('dateLastCrawled: ' + webPage.dateLastCrawled);
-    //   //   console.log();
-    // }
     res.send(searchResponse);
   });
 });
 
-
-//add API and JSON line of code from lecture here
-
-// app.get('*', (req, res) => res.redirect(CLIENT_URL));
-//app.get('*', (req, res) => res.sendFile({root: '/index.html'}));
-// app.get('/', (req,res) =>{
-//   // res.sendFile('index.html', {root: './public'});
-// })
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
-//test
