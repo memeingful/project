@@ -14,7 +14,8 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
   const Image = {};
 
   Image.search = (userInput) => {
-    return $.getJSON(`${ENV.url}/'?q='${userInput}`)
+    console.log(userInput, ENV.url + '/submit/' + userInput);
+    return $.getJSON(ENV.url + '/submit/' + userInput)
       .then(results => console.log(results.value))
       .catch(err => console.error(err));
   };
