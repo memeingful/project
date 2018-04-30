@@ -24,7 +24,8 @@ const options = {
   }
 };
 
-app.get('/submit',(req,res) => {
+app.post('/submit',(req,res) => {
+  console.log('/submit');
   request(options, function(error,response,body){
     let searchResponse = JSON.parse(body);
     // for(let i = 0; i < searchResponse.value.length; ++i){

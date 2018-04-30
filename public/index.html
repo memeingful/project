@@ -34,14 +34,23 @@
     </section>
     <section class="search-view container">
       <h2>Search for an image</h2>
-      <form id="meme-finder">
+      <form id="meme-finder" action="/submit" method="post">
         <input type="text" name="keyword" placeholder="Enter a keyword">
         <select name="dropdown">
           <option class="default" value="" disabled selected>Please select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <a href="/submit"><button id="search">Search</button></a>
+        <button id="search">
+          <input type="submit" value="search">
+        </button>
+        
       </form>
+
+      <!-- <form action="/team_name_url/" method="post">
+        <label for="team_name">Enter name: </label>
+        <input id="team_name" type="text" name="name_field" value="Default name for team.">
+        <input type="submit" value="OK">
+    </form> -->
     </section>
     <section class="result-view container">
       <h2>Select your favorite image</h2>
