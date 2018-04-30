@@ -16,7 +16,7 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
   Container.initHome = function() {
     $('.container').hide();
     $('.search-view').show();
-};
+  };
 
   Container.search = callback =>
     $.get(`${ENV.url}/submit`)

@@ -4,8 +4,13 @@
 /* mobile */
 @media screen and (max-width: 639px){
   
+  header:hover #nav-bar {
+    display: inline;
+  }
+
   #nav-bar {
-    display: inline-flex;
+    /* display: inline-flex; */
+    display:none;
   }
 
   .container {
@@ -41,10 +46,10 @@
   }
 
   .search-view {
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
   .about-view {
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
 
   .bio {
