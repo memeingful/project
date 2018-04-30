@@ -19,7 +19,7 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 };
 
   Container.search = callback =>
-    $.get(`${ENV.url}/submit`)
+    $.post(`${ENV.url}/submit`)
       .then(results => console.log(results.value));
 
   module.Container = Container;
