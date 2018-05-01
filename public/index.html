@@ -6,39 +6,9 @@
   <title>Meme-ingful</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
-
-  <!-- templates -->
-  <script id="error-template" type="text/x-handlebars-template">
-    <div id="error-message">
-      <h2>Error!</h2>
-      <p>Sorry, but we encountered a {{}} error.  Please try again.</p>
-    </div>
-  </script>
-
-  <script id="error-template" type="text/x-handlebars-template">
-    <div id="poulate-dropdown">
-      <select name="dropdown">
-        <option class="default" value="" disabled selected>Please select a Category</option>
-        <option class="category" value="{{}}">{{}}</option>
-      </select>
-    </div>
-  </script>
-
-  <script id="choice-template" type="text/x-handlebars-template">
+  <script type="text/x-handlebars-template" id="results-template">
     <div class="choice">
-      <img class="bing-image" src="{{this.contentUrl}}">
-    </div>
-  </script>
-
-  <script id="bio-template" type="text/x-handlebars-template">
-    <div class="bio">
-      <h3>{{name}}</h3>
-      <ul class="links">
-        <li><a href="{{github}}">Github</a></li>
-        <li><a href="{{linkedIn}}">Linkedin</a></li>
-        <li><a href="{{email}}">{{email}}</a></li>
-      </ul>
-      <p>{{description}}</p>
+      <img src="{{contentUrl}}"/>
     </div>
   </script>
 </head>
@@ -70,29 +40,17 @@
     <section class="search-view container">
       <h2>Search for an image</h2>
       <form id="meme-finder">
-        <input type="text" name="keyword" placeholder="Enter a keyword">
+        <input type="text" id="imageSearch" placeholder="Enter a keyword">
         <select name="dropdown">
           <option class="default" value="" disabled selected>Please select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <a href="/submit">
-          <button id="search">Search</button>
-        </a>
+        <button id="imageSelect">Search</button>
       </form>
     </section>
     <section class="result-view container">
       <h2>Select your favorite image</h2>
-      <div id="choose">
-        <div class="choice">
-          <img class="blah" src="testPics/random1.jpeg">
-        </div>
-        <div class="choice">
-          <img class="blah" src="testPics/random5.jpeg">
-        </div>
-        <div class="choice">
-          <img class="blah" src="testPics/random6.jpeg">
-        </div>
-      </div>
+      <div id="choose"></div>
     </section>
     <section class="favorite-view container">
 
@@ -134,9 +92,9 @@
 
   <!-- Application javascript -->
   <script src="js/model/app.js"></script>
-  <script src="js/views/results-view.js"></script>
+  <script src="js/views/search-view.js"></script>
   <script src="js/views/about-view.js"></script>
+  <script src="js/views/results-view.js"></script>
   <script src="js/controller/routes.js"></script>
 </body>
-
 </html>

@@ -1,5 +1,4 @@
 'use strict';
-
 var app = app || {};
 
 const ENV = {};
@@ -11,51 +10,27 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
 (function(module){
 
-  const Container = {};
+  const Image = {};
 
-  Container.initHome = function() {
-    $('.container').hide();
-    $('.search-view').show();
-};
-
-  Container.search = callback =>
-    $.get(`${ENV.url}/submit`)
-      .then(results => console.log(results.value));
-
-
-  const memesters = [{
-    name: 'Eric Singleton Jr.',
-    github: '',
-    linkedIn: '',
-    email= '',
-  }, 
-  {
-    name: 'Autumn Curtis',
-    github: '',
-    linkedIn: '',
-    email= '',
-  },
-  {
-    name: 'Jackie',
-    github: '',
-    linkedIn: '',
-    email= '',
-  },
-  {
-    name: 'David Johnson',
-    github: '',
-    linkedIn: '',
-    email= '',
-  },
-  {
-    name: 'Phillip Kim',
-    github: '',
-    linkedIn: '',
-    email= '',
+  Image.render = (values) => {
+    let image = Handlebars.compile($('#results-template').text());
+    return image(values);
   }
-]
 
-  module.Container = Container;
+  Image.search = (userInput) => {
+    $.getJSON(ENV.url + '/submit/' + userInput)
+      // .then(results => console.log(results.value))
+      .then(userInput => {
+        let imageList = userInput.value;
+        $('.container').hide();
+        $('.result-view').show();
+        for(let i=0; i<5; i++) {
+          $('#choose').append(Image.render(userInput.value[i]));
+        }
+      })
+      .catch(err => console.error(err));
+  };
+
+  module.Image = Image;
 
 })(app);
-
