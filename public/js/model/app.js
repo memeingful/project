@@ -13,8 +13,16 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
   const Image = {};
 
   Image.search = (userInput) => {
-    return $.getJSON(ENV.url + '/submit/' + userInput)
-      .then(results => console.log(results.value))
+    $.getJSON(ENV.url + '/submit/' + userInput)
+      // .then(results => console.log(results.value))
+      .then(userInput => {
+        let imageList = userInput.value;
+        $('.container').hide();
+        $('.result-view').show();
+        for(let i=1; i<imageList.length; i++) {
+          $('#choose').append(`<img src='${userInput.value[i].contentUrl}'>`);
+        }
+      })
       .catch(err => console.error(err));
   };
 

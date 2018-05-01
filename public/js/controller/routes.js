@@ -8,6 +8,6 @@ page('/*', (ctx, next) => {
 
 
 page('/', app.searchView.view);
-page('/about', app.aboutContainer.view);
 page('/results', app.resultsContainer.view);
+page('/about', app.aboutContainer.view);
 page.start();
