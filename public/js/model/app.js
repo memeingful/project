@@ -1,5 +1,4 @@
 'use strict';
-
 var app = app || {};
 
 const ENV = {};
@@ -11,18 +10,25 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
 (function(module){
 
-  const Container = {};
 
-  Container.initHome = function() {
-    $('.container').hide();
-    $('.search-view').show();
-};
 
-  Container.search = callback =>
-    $.post(`${ENV.url}/submit`)
-      .then(results => console.log(results.value));
+  const Image = {};
 
-  module.Container = Container;
+  Image.search = (userInput) => {
+    $.getJSON(ENV.url + '/submit/' + userInput)
+      // .then(results => console.log(results.value))
+      .then(userInput => {
+        let imageList = userInput.value;
+        $('.container').hide();
+        $('.result-view').show();
+        for(let i=1; i<imageList.length; i++) {
+          $('#choose').append(`<img src='${userInput.value[i].contentUrl}'>`);
+        }
+      })
+      .catch(err => console.error(err));
+  };
+
+  module.Image = Image;
 
 })(app);
 

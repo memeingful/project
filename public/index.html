@@ -34,16 +34,15 @@
     </section>
     <section class="search-view container">
       <h2>Search for an image</h2>
-      <form id="meme-finder" action="/submit" method="post">
-        <input type="text" name="keyword" placeholder="Enter a keyword">
+
+      <form id="meme-finder">
+        <input type="text" id="imageSearch" placeholder="Enter a keyword">
+
         <select name="dropdown">
           <option class="default" value="" disabled selected>Please select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <button id="search">
-          <input type="submit" value="search">
-        </button>
-        
+        <button id="imageSelect">Search</button>
       </form>
 
       <!-- <form action="/team_name_url/" method="post">
@@ -55,15 +54,15 @@
     <section class="result-view container">
       <h2>Select your favorite image</h2>
       <div id="choose">
-        <div class="choice">
-          <img class="blah" src="testPics/random1.jpeg">
+        <!-- <div class="choice">
+
+        </div> -->
+        <!-- <div class="choice">
+          
         </div>
         <div class="choice">
-          <img class="blah" src="testPics/random5.jpeg">
-        </div>
-        <div class="choice">
-          <img class="blah" src="testPics/random6.jpeg">
-        </div>
+          
+        </div> -->
       </div>
     </section>
     <section class="about-view container">
@@ -93,9 +92,9 @@
 
   <!-- Application javascript -->
   <script src="js/model/app.js"></script>
-  <script src="js/views/results-view.js"></script>
+  <script src="js/views/search-view.js"></script>
   <script src="js/views/about-view.js"></script>
+  <script src="js/views/results-view.js"></script>
   <script src="js/controller/routes.js"></script>
 </body>
-
 </html>
