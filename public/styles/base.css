@@ -5,17 +5,20 @@
   body {
     width: 100%;
     margin: auto;
-    background-color: grey;
+    background-color: rgb(252,194,208);
     color: white;
     text-align: center;
   }
   h1 {
     font-size: 3em;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
+    font-family: 'Titan One', cursive;
   }
   h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    padding: 5% 0;
   }
   h3 {
     margin: 1.5vh auto;
@@ -25,20 +28,42 @@
     position: fixed;
     width: 100%;
     top: 0;
-    padding-bottom: 2%;
-    background-color: rgb(51, 51, 51);
+    padding: 3% 0 3% 0;
+    background-color: rgb(206,132,209);
   }
   a {
   font-size: 1em;
   margin: 0px auto;
-  padding-left: 2em;  
+  padding-left: 2em;
+  }
+  img {
+    border-radius: 10%;
+    border: 10px solid rgb(206,132,209);
+    /* margin: 0 auto; */
+    width: 100%
+  }
+  button {
+    padding: 5% 20%;
+    margin-top: 35%;
+    border-radius: 10%;
+    font-size: 1.5em;
+    background-color: rgb(206,132,209);
+    color: white;
+    outline: none;
+    border: none;
+  }
+  button:active {
+    background-color: rgb(218,110,136);
+
   }
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(206,132,209);
     padding: 5% 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
   }
 }
 
