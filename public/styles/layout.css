@@ -1,45 +1,53 @@
 @import 'base.css';
 @import 'modules.css';
 
-#nav-bar {
-  display: inline-flex;
-}
-
-.container {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-.error-view {
-  color: rgb(219, 46, 46);
-  text-decoration-line: underline;
-}
-
-#meme-finder {
-  width: 80%;
-  margin: auto;
-  margin-top: 10px;
-}
-
-input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 15px;
-  outline: 0;
-}
-
-select {
-  margin: 5%;
-  width: 85%;
-  padding: 10px;
-  color: grey;
-  border-radius: 10px;
-  outline: 0;
-}
-
-.bio {
-  /* margin: 10px; */
-  padding: 10px;
+/* mobile */
+@media screen and (max-width: 639px){
+  
+  header:hover #nav-bar {
+    display: inline;
+  }
+  #nav-bar {
+    /* display: inline-flex; */
+    display:none;
+  }
+  .container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .error-view {
+    color: rgb(219, 46, 46);
+    text-decoration-line: underline;
+  }
+  #meme-finder {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: 0;
+  }
+  select {
+    margin: 5%;
+    width: 85%;
+    padding: 10px;
+    color: grey;
+    border-radius: 10px;
+    outline: 0;
+  }
+  .search-view {
+    margin-top: 12vh;
+  }
+  .about-view {
+    margin-top: 12vh;
+  }
+  .bio {
+    margin: 2vh auto;
+    padding: 10px;
+  }
 }
 
 /* desktop */
