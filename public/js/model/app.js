@@ -12,6 +12,11 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
   const Image = {};
 
+  Image.render = (values) => {
+    let image = Handlebars.compile($('#results-template').text());
+    return image(values);
+  }
+
   Image.search = (userInput) => {
     $.getJSON(ENV.url + '/submit/' + userInput)
       // .then(results => console.log(results.value))
@@ -19,8 +24,8 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
         let imageList = userInput.value;
         $('.container').hide();
         $('.result-view').show();
-        for(let i=1; i<imageList.length; i++) {
-          $('#choose').append(`<img src='${userInput.value[i].contentUrl}'>`);
+        for(let i=0; i<5; i++) {
+          $('#choose').append(Image.render(userInput.value[i]));
         }
       })
       .catch(err => console.error(err));

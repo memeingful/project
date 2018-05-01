@@ -6,6 +6,11 @@
   <title>Meme-ingful</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
+  <script type="text/x-handlebars-template" id="results-template">
+    <div class="choice">
+      <img src="{{contentUrl}}"/>
+    </div>
+  </script>
 </head>
 
 <body>
@@ -45,17 +50,7 @@
     </section>
     <section class="result-view container">
       <h2>Select your favorite image</h2>
-      <div id="choose">
-        <!-- <div class="choice">
-
-        </div> -->
-        <!-- <div class="choice">
-          
-        </div>
-        <div class="choice">
-          
-        </div> -->
-      </div>
+      <div id="choose"></div>
     </section>
     <section class="about-view container">
       <h2>About Us</h2>
