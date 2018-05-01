@@ -33,6 +33,7 @@
     font-size: 1.5em;
     text-align: center;
     color: rgb(206,132,209);
+    font-family: 'Lato', sans-serif;
   }
   select {
     width: 85%;
@@ -41,6 +42,7 @@
     border-radius: 10px;
     outline: 0;
     margin-top: 15%;
+    font-family: 'Lato', sans-serif;
   }
   .search-view {
     margin-top: 12vh;
