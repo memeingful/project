@@ -12,7 +12,6 @@ var app = app || {};
 
   $('.about-view').find('.target').on('click', function(e) {
 
-    console.log(e.target.id.split('_')[1]);
     $('.bio').hide();
     $(`.ranger_${e.target.id.split('_')[1]}`).show();
 

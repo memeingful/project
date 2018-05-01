@@ -9,23 +9,18 @@
     color: white;
     text-align: center;
   }
-
   h1 {
     font-size: 3em;
     text-decoration-line: underline;
   }
-
   h2 {
     font-size: 2em;
     font-weight: bold;
   }
-
   h3 {
-    margin: 0px auto;
-    padding-left: 2em; 
+    margin: 1.5vh auto;
     font-size: 1.5em;
   }
-
   header {
     position: fixed;
     width: 100%;
@@ -33,19 +28,17 @@
     padding-bottom: 2%;
     background-color: rgb(51, 51, 51);
   }
-
   a {
   font-size: 1em;
   margin: 0px auto;
   padding-left: 2em;  
   }
-
   footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: rgb(51, 51, 51);
-    padding: 5%;
+    padding: 5% 0;
   }
 }
 
