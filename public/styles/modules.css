@@ -87,6 +87,9 @@
     color: black;
     padding: 0 5vw;
   }
+  .links a:hover {
+    color: blue;
+  }
   .links:first-child {
     padding: 0vw;
   }
