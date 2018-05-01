@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/vendors/icon.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
+  <script type="text/x-handlebars-template" id="results-template">
+    <div class="choice">
+      <img src="{{contentUrl}}"/>
+    </div>
+  </script>
 </head>
 
 <body>
@@ -39,28 +44,18 @@
     <section class="search-view container">
       <h2>Search for an image</h2>
       <form id="meme-finder">
-        <input type="text" name="keyword" placeholder="Enter a keyword">
+        <input type="text" id="imageSearch" placeholder="Enter a keyword">
         <select name="dropdown">
           <option class="default" value="" disabled selected>Please select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <a href="/submit"><button id="search">Search</button></a>
+        <button id="imageSelect">Search</button>
       </form>
     </section>
     <!-- Results View -->
     <section class="result-view container">
       <h2>Select your favorite image</h2>
-      <div id="choose">
-        <div class="choice">
-          <img class="blah" src="assets/random1.jpeg">
-        </div>
-        <div class="choice">
-          <img class="blah" src="assets/random5.jpeg">
-        </div>
-        <div class="choice">
-          <img class="blah" src="assets/random6.jpeg">
-        </div>
-      </div>
+      <div id="choose"></div>
     </section>
     <!-- About View -->
     <section class="about-view container">
@@ -127,9 +122,9 @@
 
   <!-- Application javascript -->
   <script src="js/model/app.js"></script>
-  <script src="js/views/results-view.js"></script>
+  <script src="js/views/search-view.js"></script>
   <script src="js/views/about-view.js"></script>
+  <script src="js/views/results-view.js"></script>
   <script src="js/controller/routes.js"></script>
 </body>
-
 </html>
