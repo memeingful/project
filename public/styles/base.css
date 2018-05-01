@@ -42,10 +42,10 @@ footer {
 }
 
 
-/* desktop */
+/* desktop*/
 @media only screen and (min-width: 640px) {
   body {
-    width: 100%;
+    background-color: green;
   }
 
   header {

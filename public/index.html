@@ -25,17 +25,8 @@
   </script>
 
   <script id="choice-template" type="text/x-handlebars-template">
-    <h2>Select your favorite image</h2>
-    <div id="choose">
-      <div class="choice">
-        <img class="bing-image" src="{{}}">
-      </div>
-      <div class="choice">
-        <img class="bing-image" src="{{}}">
-      </div>
-      <div class="choice">
-        <img class="bing-image" src="{{}}">
-      </div>
+    <div class="choice">
+      <img class="bing-image" src="{{this.contentUrl}}">
     </div>
   </script>
 
@@ -47,7 +38,7 @@
         <li><a href="{{linkedIn}}">Linkedin</a></li>
         <li><a href="{{email}}">{{email}}</a></li>
       </ul>
-      <p>{{}}}</p>
+      <p>{{description}}</p>
     </div>
   </script>
 </head>
@@ -84,7 +75,9 @@
           <option class="default" value="" disabled selected>Please select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <a href="/submit"><button id="search">Search</button></a>
+        <a href="/submit">
+          <button id="search">Search</button>
+        </a>
       </form>
     </section>
     <section class="result-view container">
@@ -101,6 +94,9 @@
         </div>
       </div>
     </section>
+    <section class="favorite-view container">
+
+    </section>
     <section class="about-view container">
       <h2>About Us</h2>
       <div>
@@ -109,11 +105,21 @@
       <div class="bio">
         <h3>Name</h3>
         <ul class="links">
-          <li><a href="">Github</a></li>
-          <li><a href="">Linkedin</a></li>
-          <li><a href="">Email</a></li>
+          <li>
+            <a href="">Github</a>
+          </li>
+          <li>
+            <a href="">Linkedin</a>
+          </li>
+          <li>
+            <a href="">Email</a>
+          </li>
         </ul>
-        <p>Bio: I am awesome, please hire me. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit?</p>
+        <p>Bio: I am awesome, please hire me. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+          magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+          sit amet, consectetur, adipisci velit?</p>
       </div>
     </section>
   </main>
