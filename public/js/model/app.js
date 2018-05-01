@@ -10,8 +10,6 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
 (function(module){
 
-
-
   const Image = {};
 
   Image.search = (userInput) => {
@@ -31,4 +29,3 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
   module.Image = Image;
 
 })(app);
-

@@ -21,8 +21,6 @@ app.get('/submit/:term',(req,res) => {
     }
   };
 
-
-
   request(options, function(error,response,body){
     let searchResponse = JSON.parse(body);
     res.send(searchResponse);
