@@ -1,45 +1,63 @@
 @import 'base.css';
 @import 'modules.css';
 
-#nav-bar {
-  display: inline-flex;
-}
-
-.container {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-.error-view {
-  color: rgb(219, 46, 46);
-  text-decoration-line: underline;
-}
-
-#meme-finder {
-  width: 80%;
-  margin: auto;
-  margin-top: 10px;
-}
-
-input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 15px;
-  outline: 0;
-}
-
-select {
-  margin: 5%;
-  width: 85%;
-  padding: 10px;
-  color: grey;
-  border-radius: 10px;
-  outline: 0;
-}
-
-.bio {
-  /* margin: 10px; */
-  padding: 10px;
+/* mobile */
+@media screen and (max-width: 639px){
+  
+  header:hover #nav-bar {
+    display: inline;
+  }
+  #nav-bar {
+    /* display: inline-flex; */
+    display:none;
+  }
+  .container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .error-view {
+    color: rgb(219, 46, 46);
+    text-decoration-line: underline;
+  }
+  #meme-finder {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  input {
+    width: 80%;
+    margin-top: 15%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(206,132,209);
+    font-family: 'Lato', sans-serif;
+  }
+  select {
+    width: 85%;
+    color: rgb(206,132,209);
+    font-size: 1.5em;
+    border-radius: 10px;
+    outline: 0;
+    margin-top: 15%;
+    font-family: 'Lato', sans-serif;
+  }
+  .search-view {
+    margin-top: 12vh;
+    padding-top: 10%;
+  }
+  .about-view {
+    margin-top: 12vh;
+  }
+  .result-view {
+    margin: 20% 0;
+  }
+  .bio {
+    margin: 2vh auto;
+    padding: 10px;
+  }
 }
 
 /* desktop */
@@ -64,7 +82,7 @@ select {
   }
 
   select {
-    margin: 5%;
+    margin: 15%;
     width: 85%;
     padding: 10px;
     color: grey;
