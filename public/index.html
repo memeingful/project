@@ -11,6 +11,7 @@
   <script type="text/x-handlebars-template" id="results-template">
     <div class="choose">
       <img src="{{contentUrl}}"/>
+      <p>{{quote}}</p>
     </div>
   </script>
 </head>
@@ -51,20 +52,16 @@
           <option class="default" value="" disabled selected>Select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <button id="imageSelect">Search</button>
+        <!-- <a href="/submit">--><button id="imageSelect">Search</button><!--</a>-->
       </form>
-
-      <!-- <form action="/team_name_url/" method="post">
-        <label for="team_name">Enter name: </label>
-        <input id="team_name" type="text" name="name_field" value="Default name for team.">
-        <input type="submit" value="OK">
-    </form> -->
     </section>
+
     <!-- Results View -->
     <section class="result-view container">
       <h2>Select Your Fav</h2>
       <div id="choose"></div>
     </section>
+
     <!-- About View -->
     <section class="about-view container">
       <div class="target" id="face_1"></div>

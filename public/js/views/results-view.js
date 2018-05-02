@@ -15,9 +15,6 @@ var app = app || {};
           $('#choose').append(`<img src=${results.value[i].contentUrl}>`);
         }
       });
-      $.get(`${ENV.url}/submit/:quote`).then(result => {
-        $('#choose').append(result)
-      })
   };
 
   module.resultsContainer = resultsContainer;
