@@ -6,12 +6,8 @@ var app = app || {};
   const searchView = {};
 
   searchView.view = function() {
+    $('.container').hide();
     $('.search-view').show();
-    $('#meme-finder').on('submit', function(event) {
-      event.preventDefault();
-      let userInput = event.target.imageSearch.value;
-      module.Image.search(userInput);
-    });
   };
 
   module.searchView = searchView;
