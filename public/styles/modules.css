@@ -1,5 +1,5 @@
 /* mobile */
-@media screen and (max-width: 639px){
+@media screen and (max-width: 640px){
 
   #nav-place a {
     text-decoration: none;
@@ -205,20 +205,30 @@
     display: inline-flex;
   }
   
-  .links a {
-    text-decoration: none;
-    color: white;
-  }
-  
   .links li {
     float: left;
     margin: auto;
     padding: 2%;
   }
+
+  .links a {
+    text-decoration: none;
+    color: black;
+    padding: 0 5vw;
+    font-size: 1.5em;
+  }
+
+  .links a:hover {
+    color: blue;
+  }
+
+  .links:first-child {
+    padding: 0vw;
+  }
   
   .bio p {
     width: 80%;
-    /* margin: 0 auto; */
+    margin: 5% auto 5%;
+    font-size: 1.25em;
   }
-
 }

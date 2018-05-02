@@ -2,7 +2,7 @@
 @import 'modules.css';
 
 /* mobile */
-@media screen and (max-width: 639px){
+@media screen and (max-width: 640px){
   
   header:hover #nav-bar {
     display: inline;
