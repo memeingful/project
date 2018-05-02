@@ -44,6 +44,7 @@
     <!-- Search View -->
     <section class="search-view container">
       <h2>Search for an image</h2>
+
       <form id="meme-finder">
         <input type="text" id="imageSearch" placeholder="Enter a keyword">
         <select name="dropdown">
@@ -52,6 +53,12 @@
         </select>
         <button id="imageSelect">Search</button>
       </form>
+
+      <!-- <form action="/team_name_url/" method="post">
+        <label for="team_name">Enter name: </label>
+        <input id="team_name" type="text" name="name_field" value="Default name for team.">
+        <input type="submit" value="OK">
+    </form> -->
     </section>
     <!-- Results View -->
     <section class="result-view container">
@@ -113,10 +120,12 @@
   </main>
   
   <footer>
+      <span style="z-index:50;font-size:0.9em;"><img src="https://theysaidso.com/branding/theysaidso.png" height="20" width="20" alt="theysaidso.com"/><a href="https://theysaidso.com" title="Powered by quotes from theysaidso.com" style="color: #9fcc25; margin-left: 4px; vertical-align: middle;">theysaidso.com</a></span>
     <p>copyright</p>
   </footer>
 
   <!-- Application CDNs -->
+  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
