@@ -56,6 +56,7 @@ app.get('/quote', (req,res) => {
     headers: {
       'X-TheySaidSo-Api-Secret': process.env.API_KEYTWO
     }
+    
   };
   request(quoteResponse, function(error,response,body){
     let quoteSearchResponse = JSON.parse(body);
