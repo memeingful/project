@@ -8,7 +8,6 @@
     display: inline;
   }
   #nav-bar {
-    /* display: inline-flex; */
     display:none;
   }
   .container {
@@ -78,17 +77,14 @@
   }
 
   #meme-finder {
-    /* border: solid black 1px; */
     width: 70%;
     margin: auto;
-    /* margin-top: 10px; */
   }
 
   input {
     width: 80%;
     padding: 10px;
     border-radius: 15px;
-    /* text-align: center; */
   }
 
   select {
@@ -97,14 +93,22 @@
     padding: 10px;
     color: grey;
     border-radius: 10px;
-    /* border: black solid 1px; */
   }
 
   .search-view {
     margin-top: 12vh;
+  }
+
+  .result-view {
+    margin-top: 10vh;
+    margin-bottom: 12vh;
     padding-top: 5%;
   }
   
+  .about-view {
+    margin-top: 12vh;
+  }
+
   .bio {
     width: 75%;
     margin: auto;

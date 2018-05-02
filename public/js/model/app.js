@@ -24,18 +24,13 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
         let imageList = userInput.value;
         $('.container').hide();
         $('.result-view').show();
-        for(let i=0; i<5; i++) {
+        for(let i=0; i<6; i++) {
           $('#choose').append(Image.render(userInput.value[i]));
         }
       })
       .catch(err => console.error(err));
   };
 
-  let storeimages = [];
-  
-  image.store = () => {
-    $.()
-  }
   module.Image = Image;
 
 })(app);
