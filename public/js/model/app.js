@@ -31,6 +31,11 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
       .catch(err => console.error(err));
   };
 
+  let storeimages = [];
+  
+  image.store = () => {
+    $.()
+  }
   module.Image = Image;
 
 })(app);
