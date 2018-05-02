@@ -1,7 +1,10 @@
 'use strict';
+
 var app = app || {};
 
 const ENV = {};
+
+
 
 ENV.isProduction = window.location.protocol === 'https:';
 ENV.productionUrl = 'https://memeingful.herokuapp.com';
