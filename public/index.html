@@ -11,6 +11,7 @@
   <script type="text/x-handlebars-template" id="results-template">
     <div class="choose">
       <img src="{{contentUrl}}"/>
+      <p>{{quote}}</p>
     </div>
   </script>
 </head>
@@ -26,7 +27,7 @@
           <a href="/">Home</a>
         </li>
         <li class="link">
-          <a href="">Favorite</a>
+          <a href="/favorites">Favorites</a>
         </li>
         <li class="link">
           <a href="/about">About</a>
@@ -44,20 +45,29 @@
     <!-- Search View -->
     <section class="search-view container">
       <h2>Search for an image</h2>
+
       <form id="meme-finder">
         <input type="text" id="imageSearch" placeholder="Enter a keyword">
         <select name="dropdown">
           <option class="default" value="" disabled selected>Select a Category</option>
           <option class="category" value="">Category One</option>
         </select>
-        <button id="imageSelect">Search</button>
+        <!-- <a href="/submit">--><button id="imageSelect">Search</button><!--</a> -->
       </form>
     </section>
+
     <!-- Results View -->
     <section class="result-view container">
       <h2>Select Your Fav</h2>
       <div id="choose"></div>
     </section>
+
+    <!-- Favorites View -->
+    <section class="favorite-view container">
+      <h2>Your favorites!</h2>
+      <div id="choose"></div>
+    </section>
+
     <!-- About View -->
     <section class="about-view container">
       <div class="target" id="face_1"></div>
@@ -117,6 +127,7 @@
   </footer>
 
   <!-- Application CDNs -->
+  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
@@ -125,7 +136,7 @@
   <script src="js/model/app.js"></script>
   <script src="js/views/search-view.js"></script>
   <script src="js/views/about-view.js"></script>
-  <script src="js/views/results-view.js"></script>
+  <script src="js/views/favorite-view.js"></script>
   <script src="js/controller/routes.js"></script>
 </body>
 </html>
