@@ -99,10 +99,6 @@
 
 /* desktop */
 @media screen and (min-width: 640px) {
-  #head h1 {
-    padding-top: 2%;
-  }
-  
   #head img {
     height: 50%;
     width: auto;
@@ -117,6 +113,12 @@
   
   #nav-place li{
     list-style-type: none;
+  }
+
+  .link {
+    width: 33%;
+    float: left;
+    margin-top: 2%;
   }
   
   .default {
