@@ -159,46 +159,41 @@
   #face_1 {
     position: absolute;
     width: 10%;
-    height: 10%;
-    top: 22%;
-    left: 30%;
-    border: solid 5px black;
+    height: 20%;
+    top: 14%;
+    left: 31%;
   }
 
   #face_2 {
     position: absolute;
     width: 7%;
-    height: 8%;
-    top: 32%;
-    left: 46%;
-    border: solid 5px black;
+    height: 14%;
+    top: 22%;
+    left: 44%;
   }
 
   #face_3 {
     position: absolute;
-    width: 6%;
-    height: 6%;
-    top: 26%;
-    left: 51%;
-    border: solid 5px black;
+    width: 5%;
+    height: 15%;
+    top: 18%;
+    left: 52%;
   }
 
   #face_4 {
     position: absolute;
-    width: 6%;
-    height: 6%;
-    top: 33%;
+    width: 4%;
+    height: 14%;
+    top: 23%;
     left: 58%;
-    border: solid 5px black;
   }
 
   #face_5 {
     position: absolute;
-    width: 6%;
-    height: 6%;
-    top: 27%;
-    right: 30%;
-    border: solid 5px black;
+    width: 4%;
+    height: 10%;
+    top: 19%;
+    right: 32%;
   }
 
   .links {
@@ -234,115 +229,47 @@
   }
 }
 
-/* @media screen and (min-width: 740px) {
-  #face_3 {
-    position: absolute;
-    width: 7%;
-    height: 8%;
-    top: 29%;
-    left: 50%;
-  }
-
-  #face_4 {
-    position: absolute;
-    width: 8%;
-    height: 8%;
-    top: 37%;
-    left: 58%;
-  }
-
-  #face_5 {
-    position: absolute;
-    width: 7%;
-    height: 7%;
-    top: 30%;
-    right: 29%;
-  }
-}
-
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 900px) {
   #face_1 {
     position: absolute;
     width: 10%;
-    height: 10%;
-    top: 26%;
-    left: 30%;
+    height: 25%;
+    top: 18%;
+    left: 31%;
   }
 
   #face_2 {
     position: absolute;
-    width: 7%;
-    height: 8%;
-    top: 40%;
+    width: 6%;
+    height: 17%;
+    top: 30%;
     left: 46%;
   }
 
   #face_3 {
     position: absolute;
-    width: 7%;
-    height: 8%;
-    top: 32%;
-    left: 50%;
+    width: 4%;
+    height: 13%;
+    top: 24%;
+    left: 52%;
   }
 
   #face_4 {
     position: absolute;
-    width: 8%;
-    height: 8%;
-    top:41%;
-    left: 58%;
+    width: 5%;
+    height: 13%;
+    top:32%;
+    left: 57%;
   }
 
   #face_5 {
     position: absolute;
-    width: 7%;
-    height: 7%;
-    top: 33%;
-    right: 29%;
-  }
-}
-
-@media screen and (min-width: 1150px) {
-  #face_1 {
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    top: 30%;
-    left: 30%;
+    width: 4%;
+    height: 14%;
+    top: 25%;
+    right: 32%;
   }
 
-  #face_2 {
-    position: absolute;
-    width: 7%;
-    height: 8%;
-    top: 45%;
-    left: 46%;
-  }
-
-  #face_3 {
-    position: absolute;
-    width: 7%;
-    height: 8%;
-    top: 35%;
-    left: 50%;
-  }
-
-  #face_4 {
-    position: absolute;
-    width: 8%;
-    height: 8%;
-    top:45%;
-    left: 58%;
-  }
-
-  #face_5 {
-    position: absolute;
-    width: 7%;
-    height: 7%;
-    top: 37%;
-    right: 29%;
-  }
-} */
 
 @media screen and (min-width: 1250px) {
   #face_1 {
