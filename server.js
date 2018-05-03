@@ -15,12 +15,11 @@ app.use(express.static('public'));
 
 app.get('/submit/:term',(req,res) => {
   let options = {
-    url: process.env.API_URL + '?q=' + req.params.term,
+    url: process.env.API_URL + '?q=' + req.params.term + '&safeSearch=Strict',
     headers: {
       'Ocp-Apim-Subscription-key': process.env.API_KEYONE
     }
   };
-
   request(options, function(error,response,body){
     let searchResponse = JSON.parse(body);
     res.send(searchResponse);

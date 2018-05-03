@@ -47,8 +47,15 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
         Image.searchData.length = 0;
         $('.container').hide();
         $('.result-view').show();
-        for(let i=0; i<5; i++) {
-          Image.searchData.push(userInput.value[i]);
+        let randomNumArray=[];
+        for(let i=0; i<=4; i++) {
+          let randomNum = Math.floor(Math.random() * 36);
+          if(!randomNumArray.includes(randomNum)){
+            randomNumArray.push(Math.floor(randomNum));
+            Image.searchData.push(userInput.value[randomNumArray[i]]);
+          } else {
+            i--;
+          }
         }
       }).then(
         $.get(ENV.url+'/quote')
