@@ -13,6 +13,21 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
   const Image = {};
   Image.searchData = [];
+  Image.favorites = [];
+
+  (function checkLocalStorage(){
+
+    if(localStorage.favoriteStored) {
+
+      let favorites = localStorage.getItem('favoriteStored');
+      let data = JSON.parse(favorites);
+      data.forEach(object => Image.favorites.push(object));
+      module.favoritesContainer.render(Image.favorites);
+
+    } else {
+      console.log('There is no local storage object ');
+    }
+  })();
 
   Image.render = (values) => {
     let image = Handlebars.compile($('#results-template').text());
@@ -22,7 +37,7 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
   $('#meme-finder').on('submit', function(event) {
     event.preventDefault();
     let userTerm = event.target.imageSearch.value;
-    module.Image.search(userTerm);
+    Image.search(userTerm);
   });
 
   Image.search = (userInput) => {
@@ -39,11 +54,20 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
         $.get(ENV.url+'/quote')
           .then(result => {
             let content = result.contents.quote;
-            Image.searchData.map(info => {
+            Image.searchData.map((info,index) => {
               info.quote = content;
+              info.id = index;
             });
-            Image.searchData.forEach(element => {
+            Image.searchData.forEach((element) => {
               $('#choose').append(Image.render(element));
+            });
+            $('#choose').children().on('click', function(){
+
+              Image.favorites.push(Image.searchData[$(this).attr('id').split('_')[1]]);
+              let favoriteStored = JSON.stringify(Image.favorites);
+              localStorage.setItem('favoriteStored', favoriteStored);
+              location.reload();
+
             });
           })
       )

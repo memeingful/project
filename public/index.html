@@ -7,8 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen" href="styles/vendors/icon.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
+
   <link href="https://fonts.googleapis.com/css?family=Lato|Titan+One" rel="stylesheet">
   <script type="text/x-handlebars-template" id="results-template">
+    <div class="choose" id="index_{{id}}">
+      <img src="{{contentUrl}}"/>
+      <p>{{quote}}</p>
+    </div>
+  </script>
+
+  <script id='favorites-template' type='text/x-handlebars-template'>
     <div class="choose">
       <img src="{{contentUrl}}"/>
       <p>{{quote}}</p>
@@ -133,10 +141,10 @@
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
 
   <!-- Application javascript -->
-  <script src="js/model/app.js"></script>
   <script src="js/views/search-view.js"></script>
   <script src="js/views/about-view.js"></script>
   <script src="js/views/favorite-view.js"></script>
+  <script src="js/model/app.js"></script>
   <script src="js/controller/routes.js"></script>
 </body>
 </html>
