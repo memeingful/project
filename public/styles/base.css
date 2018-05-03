@@ -1,7 +1,7 @@
 @import 'vendors/reset.css';
 
 /* mobile */
-@media screen and (max-width: 639px){
+@media screen and (max-width: 640px){
   body {
     width: 100%;
     margin: auto;
@@ -23,6 +23,7 @@
   h3 {
     margin: 1.5vh auto;
     font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
   }
   p {
     font-family: 'Lato', sans-serif;
@@ -47,7 +48,7 @@
   }
   button {
     padding: 5% 20%;
-    margin-top: 35%;
+    margin-top: 20%;
     border-radius: 10%;
     font-size: 1.5em;
     background-color: rgb(206,132,209);
@@ -57,7 +58,6 @@
   }
   button:active {
     background-color: rgb(218,110,136);
-
   }
   footer {
     position: fixed;
@@ -74,9 +74,69 @@
 @media only screen and (min-width: 640px) {
   body {
     width: 100%;
+    margin: auto;
+    background-color: rgb(252,194,208);
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3em;
+    font-family: 'Titan One', cursive;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    padding: 5% 0;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
   }
 
   header {
-    height: 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 1% 0 1% 0;
+    background-color: rgb(206,132,209);
+  }
+
+  h3 {
+    margin: 1.5vh auto;
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+  }
+
+  img {
+    border-radius: 10px;
+    border: 5px solid rgb(206,132,209);
+    width: 100%
+  }
+
+  button {
+    padding: 3% 8%;
+    border-radius: 15px;
+    font-size: 1em;
+    background-color: rgb(206,132,209);
+    color: white;
+    outline: none;
+    border: none;
+  }
+
+  button:active {
+    background-color: rgb(218,110,136);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(206,132,209);
+    padding: 1% 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
   }
 }

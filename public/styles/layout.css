@@ -2,13 +2,12 @@
 @import 'modules.css';
 
 /* mobile */
-@media screen and (max-width: 639px){
+@media screen and (max-width: 640px){
   
   header:hover #nav-bar {
     display: inline;
   }
   #nav-bar {
-    /* display: inline-flex; */
     display:none;
   }
   .container {
@@ -62,35 +61,54 @@
 
 /* desktop */
 @media only screen and (min-width: 640px) {
+  header:hover #nav-bar {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+
+  #nav-bar {
+    display:none;
+  }
+
   .container {
     margin-top: 5%;
     margin-bottom: 5%;
   }
 
   #meme-finder {
-    /* border: solid black 1px; */
-    width: 80%;
+    width: 70%;
     margin: auto;
-    margin-top: 10px;
   }
 
   input {
     width: 80%;
     padding: 10px;
     border-radius: 15px;
-    /* text-align: center; */
   }
 
   select {
-    margin: 15%;
-    width: 85%;
+    margin: 5%;
+    width: 82%;
     padding: 10px;
     color: grey;
     border-radius: 10px;
-    /* border: black solid 1px; */
   }
 
+  .search-view {
+    margin-top: 12vh;
+  }
+
+  .result-view {
+    margin-top: 3vh;
+    margin-bottom: 12vh;
+    padding-top: 5%;
+  }
   
+  .about-view {
+    margin-top: 5vh;
+  }
+
   .bio {
     width: 75%;
     margin: auto;
