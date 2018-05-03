@@ -27,4 +27,17 @@ app.get('/submit/:term',(req,res) => {
   });
 });
 
+app.get('/quote', (req,res) => {
+  let quoteResponse = {
+    url: process.env.API_URLTWO,
+    headers: {
+      'X-TheySaidSo-Api-Secret': process.env.API_KEYTWO
+    }
+  };
+  request(quoteResponse, function(error,response,body){
+    let quoteSearchResponse = JSON.parse(body);
+    res.send(quoteSearchResponse);
+  });
+});
+
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
