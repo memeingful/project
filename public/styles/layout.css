@@ -1,11 +1,87 @@
 @import 'base.css';
 @import 'modules.css';
 
+/* cell */
+@media screen and (max-width: 420px){
+  
+  header:hover #nav-bar {
+    display: none;
+  }
+
+  
+
+  /* #foot-bar {
+    width: 50%;
+    height: 50%;
+
+  } */
+  #nav-bar {
+    /* display: inline-flex; */
+    display:none;
+  }
+  .container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .error-view {
+    color: rgb(219, 46, 46);
+    text-decoration-line: underline;
+  }
+  #meme-finder {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  input {
+    width: 80%;
+    margin-top: 15%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: 0;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(206,132,209);
+    font-family: 'Lato', sans-serif;
+  }
+  select {
+    width: 85%;
+    color: rgb(206,132,209);
+    font-size: 1.5em;
+    border-radius: 10px;
+    outline: 0;
+    margin-top: 15%;
+    font-family: 'Lato', sans-serif;
+  }
+  .search-view {
+    margin-top: 12vh;
+    padding-top: 10%;
+  }
+  .about-view {
+    margin-top: 12vh;
+  }
+  .result-view {
+    margin: 20% 0;
+  }
+  .bio {
+    margin: 2vh auto;
+    padding: 10px;
+  }
+}
+
+
+
+
 /* mobile */
+
 @media screen and (max-width: 639px){
   
   header:hover #nav-bar {
     display: inline;
+  }
+
+  #foot-place {
+    display:none;
+
   }
   #nav-bar {
     /* display: inline-flex; */
@@ -94,5 +170,10 @@
   .bio {
     width: 75%;
     margin: auto;
+  }
+
+  #foot-place {
+    display:none;
+
   }
 }
