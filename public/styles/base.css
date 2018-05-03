@@ -48,7 +48,7 @@
   }
   button {
     padding: 5% 20%;
-    margin-top: 35%;
+    margin-top: 20%;
     border-radius: 10%;
     font-size: 1.5em;
     background-color: rgb(206,132,209);
@@ -100,7 +100,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    padding: 3% 0 3% 0;
+    padding: 1% 0 1% 0;
     background-color: rgb(206,132,209);
   }
 
@@ -111,8 +111,8 @@
   }
 
   img {
-    border-radius: 10%;
-    border: 10px solid rgb(206,132,209);
+    border-radius: 10px;
+    border: 5px solid rgb(206,132,209);
     width: 100%
   }
 

@@ -140,18 +140,21 @@
 
   #choose {
     width: 80vw;
-    height: auto;
+    height: 80vh;
     margin: 0 auto;
+    /* display: inline-flex; */
   }
 
   .choose {
-    width: 40%;
-    margin: 0 5% 5%;
+    max-width: 25%;
+    max-height: 25%;
+    margin: 4% 4% 10% 4%;
     float: left;
+    /* padding: 1%; */
   }
 
   #team {
-    width: 45%;
+    width: 40%;
     margin-top: 5%;
   }
 
@@ -228,7 +231,7 @@
   
   .bio p {
     width: 80%;
-    margin: 5% auto 5%;
+    margin: 3% auto 0%;
     font-size: 1.25em;
   }
 }
@@ -360,45 +363,45 @@
   #face_1 {
     position: absolute;
     width: 10%;
-    height: 15%;
-    top: 33%;
-    left: 30%;
+    height: 20%;
+    top: 20%;
+    left: 31%;
     /* border: solid 5px black; */
   }
 
   #face_2 {
     position: absolute;
     width: 7%;
-    height: 13%;
-    top: 53%;
+    height: 20%;
+    top: 35%;
     left: 46%;
     /* border: solid 5px black; */
   }
 
   #face_3 {
     position: absolute;
-    width: 7%;
-    height: 10%;
-    top: 42%;
-    left: 50%;
+    width: 5%;
+    height: 20%;
+    top: 27%;
+    left: 52%;
     /* border: solid 5px black; */
   }
 
   #face_4 {
     position: absolute;
-    width: 8%;
-    height: 12%;
-    top:55%;
+    width: 5%;
+    height: 17%;
+    top:39%;
     left: 58%;
     /* border: solid 5px black; */
   }
 
   #face_5 {
     position: absolute;
-    width: 7%;
-    height: 10%;
-    top: 44%;
-    right: 29%;
+    width: 5%;
+    height: 15%;
+    top: 30%;
+    right: 32%;
     /* border: solid 5px black; */
   }
 }
