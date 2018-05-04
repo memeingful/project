@@ -73,6 +73,7 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
               Image.favorites.push(Image.searchData[$(this).attr('id').split('_')[1]]);
               let favoriteStored = JSON.stringify(Image.favorites);
               localStorage.setItem('favoriteStored', favoriteStored);
+              // window.history.pushState({path: '/favorites'}, 'favorites page', 'favorites');
               location.reload();
 
             });

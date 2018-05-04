@@ -6,7 +6,6 @@ page('/*', (ctx, next) => {
   next();
 });
 
-
 page('/', app.searchView.view);
 page('/favorites', app.favoritesContainer.view);
 page('/about', app.aboutContainer.view);
