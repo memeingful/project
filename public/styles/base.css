@@ -11,19 +11,21 @@
   }
   h1 {
     font-size: 3em;
-    /* text-decoration-line: underline; */
     font-family: 'Titan One', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   h2 {
     font-size: 2.5em;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     padding: 5% 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   h3 {
     margin: 1.5vh auto;
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   p {
     font-family: 'Lato', sans-serif;
@@ -43,8 +45,7 @@
   img {
     border-radius: 10%;
     border: 10px solid rgb(206,132,209);
-    /* margin: 0 auto; */
-    width: 100%
+    width: 90%
   }
   button {
     padding: 5% 20%;
@@ -64,7 +65,7 @@
     bottom: 0;
     width: 100%;
     background-color: rgb(206,132,209);
-    padding: 5% 0;
+    padding: 3% 0;
     font-family: 'Lato', sans-serif;
     font-size: 1.5em;
   }
@@ -83,6 +84,7 @@
   h1 {
     font-size: 3em;
     font-family: 'Titan One', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   h2 {
@@ -90,6 +92,7 @@
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     padding: 5% 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   p {
@@ -108,6 +111,7 @@
     margin: 1.5vh auto;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   img {
@@ -117,6 +121,7 @@
   }
 
   button {
+    margin-top: 10%;
     padding: 3% 8%;
     border-radius: 15px;
     font-size: 1em;
