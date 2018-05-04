@@ -4,12 +4,11 @@
 /* mobile */
 @media screen and (max-width: 640px){
   
-  header:hover #nav-bar {
-    display: inline;
+  header{
     font-family: 'Lato', sans-serif;
   }
   #nav-bar {
-    display:none;
+    display: inline-flex;
   }
   .container {
     margin-top: 10%;
@@ -53,13 +52,13 @@
     padding-top: 10%;
   }
   .about-view {
-    margin-top: 12vh;
+    margin-top: 16vh;
   }
   .result-view {
     margin: 20% 0;
   }
   .favorite-view {
-    margin: 20% 0;
+    margin: 25% 0;
   }
   .bio {
     margin: 2vh auto;
