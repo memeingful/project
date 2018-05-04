@@ -48,7 +48,7 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
         $('.container').hide();
         $('.result-view').show();
         let randomNumArray=[];
-        for(let i=0; i<=4; i++) {
+        for(let i=0; i<=5; i++) {
           let randomNum = Math.floor(Math.random() * 36);
           if(!randomNumArray.includes(randomNum)){
             randomNumArray.push(Math.floor(randomNum));
