@@ -41,35 +41,35 @@
     position: absolute;
     width: 15vw;
     height: 8vh;
-    top: 17vh;
+    top: 23vh;
     left: 13vw;
   }
   #face_2 {
     position: absolute;
     width: 15vw;
     height: 7vh;
-    top: 27vh;
+    top: 30vh;
     left: 43vw;
   }
   #face_3 {
     position: absolute;
     width: 15vw;
     height: 7vh;
-    top: 20vh;
+    top: 23vh;
     left: 52vw;
   }
   #face_4 {
     position: absolute;
     width: 15vw;
     height: 7vh;
-    top: 28vh;
+    top: 30vh;
     left: 68vw;
   }
   #face_5 {
     position: absolute;
     width: 15vw;
     height: 6vh;
-    top: 22vh;
+    top: 25vh;
     right: 11vw;
   }
   .links {
@@ -242,7 +242,7 @@
     position: absolute;
     width: 10%;
     height: 25%;
-    top: 18%;
+    top: 25%;
     left: 31%;
   }
 
@@ -250,7 +250,7 @@
     position: absolute;
     width: 6%;
     height: 17%;
-    top: 30%;
+    top: 37%;
     left: 46%;
   }
 
@@ -258,7 +258,7 @@
     position: absolute;
     width: 4%;
     height: 13%;
-    top: 24%;
+    top: 31%;
     left: 52%;
   }
 
@@ -266,7 +266,7 @@
     position: absolute;
     width: 5%;
     height: 13%;
-    top:32%;
+    top:39%;
     left: 57%;
   }
 
@@ -274,8 +274,8 @@
     position: absolute;
     width: 4%;
     height: 14%;
-    top: 25%;
-    right: 32%;
+    top: 32%;
+    right: 33%;
   }
 
 
@@ -284,7 +284,7 @@
     position: absolute;
     width: 10%;
     height: 20%;
-    top: 20%;
+    top: 32%;
     left: 31%;
   }
 
@@ -292,7 +292,7 @@
     position: absolute;
     width: 7%;
     height: 20%;
-    top: 35%;
+    top: 50%;
     left: 46%;
   }
 
@@ -300,7 +300,7 @@
     position: absolute;
     width: 5%;
     height: 20%;
-    top: 27%;
+    top: 40%;
     left: 52%;
   }
 
@@ -308,7 +308,7 @@
     position: absolute;
     width: 5%;
     height: 17%;
-    top:39%;
+    top:50%;
     left: 58%;
   }
 
@@ -316,7 +316,7 @@
     position: absolute;
     width: 5%;
     height: 15%;
-    top: 30%;
+    top: 40%;
     right: 32%;
   }
 }
