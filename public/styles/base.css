@@ -25,6 +25,7 @@
     margin: 1.5vh auto;
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
   p {
     font-family: 'Lato', sans-serif;
@@ -44,8 +45,7 @@
   img {
     border-radius: 10%;
     border: 10px solid rgb(206,132,209);
-    /* margin: 0 auto; */
-    width: 100%
+    width: 90%
   }
   button {
     padding: 5% 20%;
@@ -111,6 +111,7 @@
     margin: 1.5vh auto;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
   img {
