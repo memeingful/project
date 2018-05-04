@@ -39,4 +39,5 @@ app.get('/quote', (req,res) => {
   });
 });
 
+app.use((req,res) => res.sendFile('404.html', {root: './public'}));
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
