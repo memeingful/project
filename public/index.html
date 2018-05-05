@@ -8,6 +8,13 @@
   <link rel="stylesheet" type="text/css" media="screen" href="styles/vendors/icon.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="styles/layout.css" />
   <link href="https://fonts.googleapis.com/css?family=Lato|Titan+One" rel="stylesheet">
+  
+  <!-- Application Templates -->
+  <script type="text/x-handlebars-template" id="error-template">
+    <h2>Error!</h2>
+    <p>Looks like something broke! Click on me or refresh and search again!</p>
+  </script>
+
   <script type="text/x-handlebars-template" id="results-template">
     <div class="choose" id="index_{{id}}">
       <img src="{{contentUrl}}"/>
@@ -76,9 +83,9 @@
 
   <main>
     <!-- Error View -->
-    <section class="error-view container">
-      <h2>Error!</h2>
-    </section>
+    <a href="/"><section class="error-view container">
+        <section id="error-message"></section>
+    </section></a>
     <!-- Search View -->
     <section class="search-view container">
       <h2>Search for an image</h2>
@@ -170,6 +177,7 @@
 
   <!-- Application javascript -->
   <script src="js/views/search-view.js"></script>
+  <script src="js/views/error-view.js"></script>
   <script src="js/views/about-view.js"></script>
   <script src="js/views/favorite-view.js"></script>
   <script src="js/model/app.js"></script>

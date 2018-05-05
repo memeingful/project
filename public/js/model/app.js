@@ -29,6 +29,11 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
     }
   })();
 
+  function errorCallback(err) {
+    console.log(err);
+    module.errorView.initView(err);
+  }
+
   Image.render = (values) => {
     let image = Handlebars.compile($('#results-template').text());
     return image(values);
@@ -78,8 +83,9 @@ ENV.url = ENV.isProduction ? ENV.productionUrl : ENV.developmentUrl;
 
             });
           })
+          .catch(errorCallback)
       )
-      .catch(err => console.error(err));
+      .catch(errorCallback);
     $('#imageSearch').val('');
   };
 

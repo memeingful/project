@@ -14,10 +14,6 @@
     margin-top: 10%;
     margin-bottom: 10%;
   }
-  .error-view {
-    color: rgb(219, 46, 46);
-    text-decoration-line: underline;
-  }
   #meme-finder {
     width: 80%;
     margin: auto;
@@ -50,6 +46,12 @@
   .search-view {
     margin-top: 12vh;
     padding-top: 10%;
+  }
+  .error-view {
+    margin-top: 25vh;
+    padding-top: 10%;
+    color: rgb(219, 46, 46);
+    text-decoration-line: underline;
   }
   .about-view {
     margin-top: 16vh;
@@ -113,7 +115,15 @@
     margin-bottom: 12vh;
     padding-top: 5%;
   }
-  
+  .error-view {
+    margin-top: 25vh;
+    padding-top: 10%;
+    color: rgb(219, 46, 46);
+    text-decoration-line: underline;
+  }
+  .error-view>a {
+    text-decoration: none;
+  }
   .about-view {
     margin-top: 12vh;
   }
