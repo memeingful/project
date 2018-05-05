@@ -41,35 +41,35 @@
     position: absolute;
     width: 15vw;
     height: 8vh;
-    top: 23vh;
+    top: 26vh;
     left: 13vw;
   }
   #face_2 {
     position: absolute;
     width: 15vw;
     height: 7vh;
-    top: 30vh;
+    top: 37vh;
     left: 43vw;
   }
   #face_3 {
     position: absolute;
     width: 15vw;
     height: 7vh;
-    top: 23vh;
+    top: 30vh;
     left: 52vw;
   }
   #face_4 {
     position: absolute;
     width: 15vw;
     height: 7vh;
-    top: 30vh;
+    top: 38vh;
     left: 68vw;
   }
   #face_5 {
     position: absolute;
     width: 15vw;
     height: 6vh;
-    top: 25vh;
+    top: 31vh;
     right: 11vw;
   }
   .links {
